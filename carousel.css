@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   min-height: 100vh;
+   
+}
+
+.carousel1{
+    display: flex;
+    
+}
+#slider{
+    position: relative;
+    
+}
+#precedent{
+  left: 0;  
+}
+#suivant{
+   right: 0;
+    
+}
+#precedent, #suivant{
+    font-size: 40px;
+    position: absolute;
+    top: 140px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+    cursor: pointer;
+    padding: 5px;
+    font-family: poppins, sans-serif;
+    opacity: 0;
+}
+#slider:hover #precedent, #slider:hover #suivant{
+    opacity: 1;
+}
+h1{
+    text-align: center;
+}
+.container{
+    
+    align-items: center;
+    justify-content: center;
+}
+img{
+    height: 350px;
+
+}

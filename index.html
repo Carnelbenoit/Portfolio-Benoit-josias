@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josias AVOUNGNLANKOUN-Developpeur WEB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="calcul.html">
+   <link rel="stylesheet" href="rebours et compteur mot.html">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+<div class="container d-flex">
+    <div class="logo">
+       <a href="index.html">PORTFOLIO</a>
+    </div>
+    <nav class="navbar">
+        <ul class="menu list-unstyled">
+             <li><a href="index.html">Acceuil</a></li>
+             <li><a href="#skills">Compétences</a></li>
+             <li><a href="#portfolio">Portfolio</a></li>
+             <li><a href="#Services">Services</a></li>
+             <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+                         
+    <div class="right">
+        <ul class="social list-unstyled">
+            <li><a href=""><i class="fa-brands fa-facebook" style="color: rgb(49, 120, 148);"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-twitter" style="color: rgb(49, 120, 148);"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-square-google-plus" style="color: rgb(49, 120, 148);"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-pinterest" style="color: rgb(49, 120, 148);"></i></a></li>
+        </ul>
+        <button class="burger"><span class="bar"></span></button>
+    </div>
+</div>
+    </header>
+   
+<section id="hero" class="hero">
+    <div class="container">
+      <div class="grid">
+        <div class="hero__item right">
+            <div class="hero__avatar">
+                <img width="350" height="350" src="img/WhatsApp Image 2024-02-23 à 13.01.03_5d8538a1.jpg" alt="">
+            </div>
+        </div>
+        <div class="hero__itemleft">
+          <span>Développeur Web</span>
+          <h1>Bienvenu(e) !, je suis josias AVOUNGNLANKOUN</h1>  
+          <p style="color: white;">Qualifié en développement web front-end et back-end</p>
+        </div>
+       
+      </div>
+    </div>
+</section>
+<section id="skills" class="skills" >
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" style="background-color: rgb(98, 130, 143); padding: 20px; color: white;">Mes compétences</h2>
+        
+           <p style="text-align: center; margin: 30px;">Découvrez plus sur mes niveaux de compétence dans le domaine du numérique</p>
+        </div>
+        <div class="grid">
+            <div class="grid__item">
+                    <h3>Domaine de compétence</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <h4>Développement web</h4>
+                            <p>maîtrise de quelques langage de programmation</p>
+                        </li>
+                        <li>
+                            <h4>Rédaction web SEO</h4>
+                            <p>Maîtrise de diférents type de rédaction web</p>
+                        </li>
+                    
+                        
+                        
+                    </ul>
+            </div>
+            <div class="grid__item skills-animation">
+                <h3>Compétence en développement web</h3>
+                <div class="progressbar">
+                    <div class="bar" style="width: 95%;">HTML</div>  
+                </div>
+                <div class="progressbar">
+                    <div class="bar" style="width: 90%;">CSS</div>
+                </div>
+                <div class="progressbar">
+                    
+                    <div class="bar" style="width: 70%;">JAVASCRIPT</div>
+                </div>
+                <div class="progressbar">
+                    <div class="bar" style="width: 80%;">PHP (LARAVEL)</div>
+                </div>
+               
+                <h3>Compétence en rédaction web SEO</h3>
+
+                <div class="progressbar">
+                    <div class="bar"  style="width: 95%;">Article de blog</div>
+                </div>
+                <div class="progressbar">
+                    <div class="bar"  style="width: 90%;">Description de produit</div>
+                </div>
+                <div class="progressbar">
+                    <div class="bar"  style="width: 90%;">Fiche produit</div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+
+</section>
+<section id="portfolio"  class="portfolio">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title"  style="background-color: rgb(98, 130, 143); padding: 20px; color: white;" >Mon portfolio</h2>
+        
+           <h3 style="text-align: center; margin: 40px;" >Découvrez mes réalisations</h3>
+        </div>
+        <ul class="grid portfolio-filter list-unstyled">
+            <li class="grid__item">
+                <a href="#" onclick="event.preventDefault()"  class="active" data-filter="all">Tous les projets</a>
+            </li>
+            <li class="grid__item">
+                <a href="#" data-filter="Jeux" onclick="event.preventDefault()">Jeux</a>
+            </li>
+            <li class="grid__item">
+                <a href="#" data-filter="Blog" onclick="event.preventDefault()">Blog</a>
+            </li>
+            <li class="grid__item">
+                <a href="#" data-filter="Ecommerce" onclick="event.preventDefault()">Ecommerce</a>
+            </li>
+        </ul>
+        <div class="grid">
+            <div class="grid__item">
+                <div class="card" data-category="Jeux">
+                    <img src="img/WhatsApp Image 2024-02-22 à 13.08.48_200460dc.jpg" alt="" class="card__image" width="350" height="250">
+                  <div class="card__inner">
+                      <h3 class="card__titre">PROJET 1</h3>
+                      <p class="catégories">Jeu snake</p>
+                  </div>
+                  <button type="submit"> <a href="https://carnelbenoit.github.io/Josias-Snake-Game/">Découvrir</a></button>
+                </div>
+              </div>
+              
+              <div class="grid__item">
+                <div class="card" data-category="Jeux">
+                    <img src="img/Capture d’écran 2024-08-15 223124.jpg" alt="" class="card__image"  width="350" height="250"><div class="card__inner">
+                      <h3 class="card__titre">PROJET 2</h3>
+                      <p class="catégories">jeu de quiz sur js</p>
+                  </div>
+                  <button type="submit" class="btn"><a href="https://carnelbenoit.github.io/Quiz-Game-By-Josias/">Découvrir</a></button>
+                </div>
+              </div>
+            <div class="grid__item">
+              <div class="card" data-category="Blog">
+                <img src="img/WhatsApp Image 2024-02-22 à 13.08.48_497d12a8.jpg" width="350" height="250">                
+                <div class="card__inner">
+                    <h3 class="card__titre">projet 3</h3>
+                    <p class="catégories">Site de blog</p>
+                </div>
+                <button type="submit" class="btn"><a href="https://outilsnumerique.com/">Découvrir</a></button>
+              </div>
+            </div>
+            
+              <div class="grid__item">
+                <div class="card" data-category="Ecommerce">
+                    <img src="img/WhatsApp Image 2024-02-22 à 13.34.30_89ae846d.jpg" alt="" class="card__image"  width="350" height="250">
+                  <div class="card__inner">
+                      <h3 class="card__titre">PROJET 4</h3>
+                      <p class="catégories">Site ecommerce</p>
+                  </div>
+                  <button type="submit" class="btn"><a href="https://carnelbenoit.github.io/Ecommerce-Frontend/">Découvrir</a></button>
+                </div>
+              </div>
+              
+            
+        </div>
+        
+    </div>
+</section>
+    <section id="Services" class="Services">
+       <div class="container">
+        <div class="section-header">
+            <h2 class="section-title"  style="background-color: rgb(98, 130, 143); padding: 20px; color: white;" >Mes services</h2>
+           </div>
+           
+       </div>
+       <div class="grid">
+        <div class="grid__item">
+            <div class="service">
+                <div class="service__icon">
+                    <i class="fa-regular fa-lightbulb"></i>
+                </div>
+                <div class="service__content">
+                    <h3>Gestion de projet web</h3>
+                    <p style="margin: 30px;">Réalisation de site web vitrine ou ecommerce </p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service__icon">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                </div>
+                <div class="service__content">
+                    <h3> Wordpress</h3>
+                    <p style="margin: 30px;">création de site avec wordpress</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid__item">
+           
+            <div class="service">
+                <div class="service__icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="service__content">
+                    <h3>Interface d'administration</h3>
+                    <p style="margin: 30px;">configuration d'interface utilisateur de votre site web</p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service__icon">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="service__content">
+                    <h3>Redaction web seo</h3>
+                    <p style="margin: 30px;">Article de blog, Copywriting, Description produits</p>
+                </div>
+            </div>
+        </div>
+       </div>
+    </section>
+   
+
+    <section id="contact"  class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title"  style="background-color: rgb(98, 130, 143); padding: 20px; color: white;" >Formulaire de contact</h2>
+            
+            </div>
+           <form action="" class="form" id="myform">
+            <label for="firstname">
+                <input type="text" name="name" id="name" placeholder="nom">
+            </label>
+            <label for="lastname">
+                <input type="text" name="lastname" id="firstname" placeholder="prénom">
+            </label>
+            <label for="Email">
+                <input type="text" name="email" id="email" placeholder="email">
+            </label>
+            
+            <button type="submit" class="btn">Envoyer</button>
+           </form>
+           <p id="erreur" style="color: red;" class="o"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container_fin">
+            <div class="grille">
+                <div class="grid_item">
+                    <p  style="color: #FFF;margin-bottom: 20px;"><i class="fa-solid fa-phone" style="margin-right: 10px;"></i>+229 62-08-99-98</p>
+                </div>
+                <div class="grid_item">
+                    <ul class="ul">
+                        <li><a href=""></a><i class="fa-brands fa-facebook" style="color: white"></i></li>
+                        <li><a href=""><i class="fa-brands fa-square-twitter" style="color: white"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-google-plus" style="color: white"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-pinterest" style="color:white"></i></a></li>
+                    </ul>
+                </div>
+                
+                <div class="grid_item">
+                    <P class="text-muted" style="color: #FFF;"><i class="fa-regular fa-copyright" style="margin-right: 10px;" ></i>copyright2024 tous droits réservés</P>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script> 
+function menuMobile(){
+  const  btn = document.querySelector(".burger");
+  const  header = document.querySelector(".header");
+  const links = document.querySelectorAll(".navbar a");
+
+  btn.addEventListener('click', function(){
+    header.classList.toggle('show-nav')
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', function(){
+    header.classList.remove('show-nav')
+  });
+  });
+}
+
+menuMobile()
+
+/*........*/
+
+function tabsFilters(){
+    const tabs = document.querySelectorAll('.portfolio-filter a');
+    const projets = document.querySelectorAll('.portfolio .card'); 
+
+    const resetActivelinks = function(){
+        tabs.forEach(elem => {
+            elem.classList.remove('active')
+        })
+    }
+
+    const ShowProjet = function(elem){
+        console.log(elem)
+        projets.forEach(projet =>{
+
+            let filter= projet.getAttribute('data-category');
+            if(elem === 'all'){
+                projet.parentNode.classList.remove('hide');
+                return
+            }
+
+            if (filter !== elem){
+                projet.parentNode.classList.add("hide");
+            } else {
+                projet.parentNode.classList.remove('hide'); 
+            }
+           // console.log(projet);
+        });
+    }
+
+   tabs.forEach(elem => {
+    elem.addEventListener('click', function(event) {
+       event.preventDefault();
+      let filter= elem.getAttribute('data-filter');
+     // console.log(filter);
+      ShowProjet(filter)
+      resetActivelinks();
+      elem.classList.add('active');
+    })
+   })
+
+   
+}
+tabsFilters()
+
+
+ /**
+   * Animate the skills items on reveal
+   */
+
+let skillsAnimation = document.querySelectorAll('.skills-animation');
+  skillsAnimation.forEach((item) => {
+    new Waypoint({
+      element: item,
+      offset: '80%',
+      handler: function(direction) {
+        let progress = item.querySelectorAll('.progress .progress-bar');
+        progress.forEach(el => {
+          el.style.width = el.getAttribute('aria-valuenow') + '%';
+        });
+      }
+    });
+  });
+
+
+/* formulaire*/
+
+ document.getElementById('myform').addEventListener('submit', function(e){
+   e.preventDefault();
+
+   var erreur;
+   const myname = document.getElementById('name') ;
+   const myfirstname = document.getElementById('firstname') ;
+   const myemail = document.getElementById('email') ;
+
+if(!myemail.value){
+    erreur= "veuillez renseigner votre email"
+}
+if(!myfirstname.value){
+    erreur= "veuillez renseigner votre prénom"
+}
+if(!myname.value){
+    erreur= "veuillez renseigner tous les champs"
+}
+
+if( erreur){
+    e.preventDefault();
+    document.getElementById("erreur").innerHTML= erreur;
+}else{
+    alert('formulaire envoyé')
+}
+
+  
+})
+
+</script>
+<script src="index.js"></script>
+</html>

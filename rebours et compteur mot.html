@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rebours et compteur mot.css">
+    
+</head>
+
+<body>
+<h2 class="demoDate"></h2>
+
+<h1>compteur de mot</h1>
+<textarea></textarea>
+<p>Nombre de mot:  <span id="nbmots">0</span></p>
+<p>Nombre de caractère:  <span id="nbcaractères">0</span></p>
+
+</body>
+<script>
+      // compte à rebours...//
+const text= document.querySelector('h2')
+
+
+
+   function getChrono(){
+      
+const now= new Date().getTime();
+const countdownDate= new Date(' february 19, 2025').getTime();
+
+   const distanceBase= countdownDate - now;
+
+const day = Math.floor(distanceBase / (1000 * 60 * 60 * 24));
+const hours = Math.floor((distanceBase % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+const minutes = Math.floor((distanceBase % (1000 * 60 * 60)) / (1000 * 60))
+const seconds = Math.floor((distanceBase % (1000 * 60)) / (1000));
+
+text.innerText= `${day}j ${hours}h ${minutes}m ${seconds}s`;
+
+   }
+   getChrono()
+
+   const countDownInterval = setInterval(() => {
+    getChrono()
+   }, 1000);
+
+   // compteur de mot.....//
+
+ const nbmots = document.getElementById('nbmots');
+ const nbcaractères= document.getElementById('nbcaractères');
+ const textarea = document.querySelector('textarea');
+
+ textarea.addEventListener('keyup', function(e){
+  if (e.target.value != ""){
+   nbmots.textContent=countWords(e.target.value);
+   nbcaractères.textContent=countChar(e.target.value);
+  }else{
+    console.log("remettre à 0");
+  }
+ });
+
+ const countWords = function(text){
+  return text.replace(/ [!.,:;]/g,"").trim().split(' ').length;
+ }
+
+ const countChar = function(text){
+  return text.trim().length;
+ }
+
+ 
+
+
+</script>
+
+<script src="index.js"></script>
+
+</html>

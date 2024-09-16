@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="planning.css">
+</head>
+<body>
+
+    <section class="first-section">
+        <div id="app">
+            <h1>Projet 2</h1>
+        <h2>Plateforme de gestion des tâches</h2>
+        
+        <h3>Membres du groupe</h3>
+        <ol>
+                <li>Cybèle Sounouvi</li>
+                <li>Désiré</li>
+                <li>Godfroid</li>
+                <li>AVOUNGNLANKOUN josias</li>
+        </ol>
+        <button id="Commencer" onclick="Commencer()" >Commencer</button>
+        </div>
+        </section>
+
+    <section class="second-section">
+        <div class="row">
+            <div class="col-md-6 pt-5">
+                <div class="formulaire">
+    
+                    <h2>Entrez votre tâche</h2>
+                    <form >
+                        <label>Entrez votre activité:</label>
+                        <input type="text" class="texta"><br>
+            
+                        <label class="LABEL2">Date d'exécution:</label>
+                        <input type="date" class="textb"><br>
+            
+                
+                    </form>
+                    <button type="submit" class="button1">
+                    Ajouter aux tâches
+                        </button>
+                        <button type="submit" class="button1" onclick="retourner()" >
+                            Retour
+                                </button>
+                  </div>
+            </div>
+            <div class="col-md-4 pt-5">
+                <div class="position-relative">
+              
+                    <div class="t">
+                        <h2 class="TITRE text-center ">Gestion de tâche</h2>
+                      <table border="2" class="TABLEAU">
+                          <tr>
+                              <th>Tâches</th>
+                              <th>Dates échéance</th>
+                        
+                              <th class="vide">Etat d'évolution</th>
+                              <th>Modifier Etat</th>
+                              <th class="vide">Retirer</th>
+                          </tr>
+                         
+                          
+                      </table>
+                     </div>
+                    
+                     
+                   </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </section>
+
+    
+      
+    
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+       crossorigin="anonymous"></script>
+  <script src="bootstrap.min.js"></script> 
+
+
+</body>
+
+<script>
+const disparaitre = document.querySelector('.first-section');
+const recupérer = document.querySelector('.second-section');
+function Commencer(){
+    const recupérer = document.querySelector('.second-section');
+    recupérer.style.display = 'flex';
+disparaitre.style.display = 'none'
+}
+function retourner(){
+    recupérer.style.display = 'none';
+disparaitre.style.display = 'flex'
+}
+
+
+
+    const mytable=  document.querySelector('.TABLEAU')
+const input_texta= document.querySelector(".texta");
+const input_textb= document.querySelector(".textb")
+const input_textc= document.querySelector(".textc");
+const mybutton= document.querySelector('.button1');
+ 
+
+mybutton.addEventListener('click', function(e){
+e.preventDefault();
+//LIGNE TR
+const todo_tr= document.createElement("tr");
+todo_tr.classList.add("ligne");
+
+
+//colonnes td
+const mycolonne1=document.createElement("td");
+mycolonne1.innerText= input_texta.value;
+mycolonne1.classList.add("td1");
+todo_tr.appendChild(mycolonne1);
+input_texta.value=""
+
+const mycolonne2=document.createElement("td");
+mycolonne2.innerText= input_textb.value;
+mycolonne2.classList.add("td2");
+todo_tr.appendChild(mycolonne2)
+input_textb.value=""
+
+const mycolonne3=document.createElement("td");
+mycolonne3.classList.add("td3");
+todo_tr.appendChild(mycolonne3);
+
+
+const mycolonne5=document.createElement("td");
+mycolonne5.innerHTML= "button".innerText="Modifier"
+mycolonne5.classList.add("td5");
+mycolonne5.onclick = function() {
+    const nouvelleValeur = prompt('état (validé ou non validé) :'); 
+    if(nouvelleValeur =="validé" ){
+    mycolonne3.style.background="green"
+    mycolonne3.textContent="validé"
+    mycolonne3.style.color="white"
+   }else if (nouvelleValeur =="non validé"){
+    mycolonne3.style.background="red"
+    mycolonne3.textContent="Non validé"
+    mycolonne3.style.color="white"
+   }else{
+    alert("veuillez renseigner les options proposées")
+   }
+        };
+todo_tr.appendChild(mycolonne5);
+
+
+const mycolonne4=document.createElement("td");
+mycolonne4.innerHTML= "button".innerText="Supprimer"
+mycolonne4.classList.add("td4");
+
+todo_tr.appendChild(mycolonne4);
+
+mytable.appendChild(todo_tr);
+
+})
+
+ mytable.addEventListener('click', function(e){
+   const item=e.target;
+  if( item.classList[0]==='td4'){
+    const todo_tr=item.parentElement;
+    todo_tr.remove();
+  }
+ })
+
+
+
+</script>
+<script src="index.js"></script>
+</html>
+

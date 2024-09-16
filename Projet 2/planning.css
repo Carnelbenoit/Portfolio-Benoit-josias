@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    font-family: sans-serif;
+   
+   
+}
+#Commencer{
+    padding: 10px;
+    background-color: rgb(98, 98, 241);
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    
+}
+#app{
+        
+    
+    border-radius: 8px;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: min(100%);
+}
+ th{
+    color: white;
+ }
+h1{
+    background-color: rgb(224, 224, 7);
+    color: white;
+    text-align: center;
+    margin: 40px;
+    padding: 20px;
+}
+h2{
+    margin-top: 10px;
+
+}
+h3{
+   
+    margin-top: 40px;
+   text-decoration: underline;
+   
+}
+.second-section{
+    display: none;
+}
+h2{
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+body{
+    padding: 20px;
+}
+.TABLEAU{
+  
+    background-color: rgb(98, 98, 241);
+
+}
+.button1{
+   
+    padding: 10px;
+    background-color: rgb(98, 98, 241);
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+   
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.t{
+ margin-top: 20px;
+ 
+}
+.button1:hover{
+    background-color:white;
+    color:rgb(98, 98, 241);
+}
+
+.ligne{
+    background-color: white;
+    
+}
+
+th{
+    padding: 15px;
+}
+td{
+    padding: 15px;
+}
+
+
+.formulaire{
+    
+    margin-top: 30px;
+   
+}
+label{
+    margin-bottom: 20px;
+}
+input{
+    margin-bottom: 20px;
+}
+
+.LABEL2{
+    margin-right: 22px;
+}
+
+.texta{
+    padding: 20px;
+    width: 200px;
+}
+.textb{
+   width: 200px; 
+   padding: 10px;
+}
+.td4{
+    font-size: 15px;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  color: white;
+  background-color: rgb(66, 66, 66);
+ padding-bottom: 10px;
+}
+
+.td5{
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-style: none;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+@media(max-width: 412px){
+   .formulaire{
+   text-align: center;
+   margin-bottom: 20px;
+   }
+   th{
+    padding:5px;
+}
+}
